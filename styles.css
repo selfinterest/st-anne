@@ -1,0 +1,678 @@
+:root {
+  --paper: #faf6ed;
+  --ink: #152c32;
+  --accent: #bd452c;
+  --r-background-color: var(--paper);
+  --r-main-font: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+  --r-main-font-size: 32px;
+  --r-main-color: var(--ink);
+  --r-heading-font: var(--r-main-font);
+  --r-heading-color: var(--ink);
+  --r-link-color: var(--accent);
+  --r-link-color-hover: var(--ink);
+  --r-selection-background-color: #f2c79b;
+  --r-selection-color: var(--ink);
+}
+
+body {
+  background: var(--paper);
+}
+
+.reveal {
+  color: var(--ink);
+  font-family: var(--r-main-font);
+  font-size: var(--r-main-font-size);
+  line-height: 1.3;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides > section,
+.reveal .pdf-page > section {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+}
+
+.reveal .frame {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 62px 80px;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal p,
+.reveal figure {
+  margin: 0;
+}
+
+.reveal h1,
+.reveal h2 {
+  font-weight: 700;
+  text-transform: none;
+}
+
+.reveal h1 {
+  font-size: 148px;
+  letter-spacing: -0.05em;
+  line-height: 1.02;
+}
+
+.reveal h1 span {
+  display: block;
+}
+
+.reveal .accent {
+  color: var(--accent);
+}
+
+.reveal .title-frame {
+  display: flex;
+  flex-direction: column;
+  padding-top: 102px;
+}
+
+.reveal .presenter {
+  margin-top: 38px;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.reveal .title-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: auto;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.reveal .title-footer time {
+  color: #526568;
+}
+
+.reveal a {
+  color: var(--r-link-color);
+  text-decoration: none;
+}
+
+.reveal a:hover {
+  color: var(--r-link-color-hover);
+}
+
+.reveal a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 6px;
+}
+
+.reveal h2 {
+  font-size: 68px;
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+}
+
+.reveal .career-collage {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 210px);
+  align-items: center;
+  gap: 46px 44px;
+  margin-top: 42px;
+}
+
+.reveal .career-collage figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
+  min-width: 0;
+}
+
+.reveal .career-collage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+
+.reveal .career-collage .university img {
+  width: 190px;
+  height: 190px;
+}
+
+.reveal .career-collage .mcgraw-hill img {
+  width: 185px;
+  height: 185px;
+}
+
+.reveal .career-collage .pillpack img {
+  width: 210px;
+  height: 175px;
+}
+
+.reveal .slide-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+}
+
+.reveal .portrait-question {
+  display: grid;
+  grid-template-columns: 740px 540px;
+  height: 100%;
+}
+
+.reveal .portrait-question-copy {
+  display: flex;
+  align-items: center;
+  padding: 64px 80px;
+}
+
+.reveal .portrait-question h2 {
+  font-size: 70px;
+  letter-spacing: -0.04em;
+  line-height: 1.18;
+}
+
+.reveal .portrait-question h2 span {
+  display: block;
+}
+
+.reveal .philosophy-intro .accent {
+  margin-top: 8px;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.reveal .philosophy-intro p:last-child {
+  margin-top: 46px;
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+.reveal .portrait-question-photo {
+  display: block;
+  width: 540px;
+  height: 720px;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+}
+
+.reveal .philosophy-skills-slide h2 {
+  font-size: 64px;
+}
+
+.reveal .philosophy-skills-content {
+  display: grid;
+  grid-template-columns: 440px 640px;
+  align-items: center;
+  gap: 40px;
+  height: 450px;
+  margin-top: 30px;
+}
+
+.reveal .philosophy-skills {
+  display: grid;
+  gap: 18px;
+  margin: 0;
+}
+
+.reveal .philosophy-skills > div {
+  display: block;
+}
+
+.reveal .philosophy-skills dt {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+.reveal .philosophy-skills dd {
+  margin: 6px 0 0;
+  color: #3a5155;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.reveal .philosophy-art img {
+  display: block;
+  width: 640px;
+  height: 420px;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+}
+
+.reveal .philosophy-art figcaption {
+  margin-top: 8px;
+  color: #526568;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.reveal .skill-story-frame h2 {
+  font-size: 64px;
+}
+
+.reveal .skill-story-grid {
+  display: grid;
+  grid-template-columns: 700px 360px;
+  align-items: center;
+  gap: 60px;
+  height: 360px;
+  margin-top: 36px;
+}
+
+.reveal .skill-story-question {
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.reveal .skill-story-answer {
+  margin-top: 26px;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.reveal .skill-story-logo {
+  display: block;
+  width: 320px;
+  height: 320px;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+}
+
+.reveal .skill-leadership-point {
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.reveal .writing-doc-count {
+  font-size: 144px;
+  font-weight: 700;
+  letter-spacing: -0.07em;
+  line-height: 1.05;
+}
+
+.reveal .writing-doc-caption {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.reveal .courage-story-grid {
+  display: grid;
+  grid-template-columns: 440px 640px;
+  align-items: center;
+  gap: 40px;
+  height: 450px;
+  margin-top: 30px;
+}
+
+.reveal .courage-story-context {
+  margin-top: 26px;
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.reveal .courage-leadership-point {
+  margin-top: 24px;
+}
+
+.reveal .partnership-frame h2 {
+  font-size: 64px;
+}
+
+.reveal .partnership-question {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.reveal .launch-context {
+  margin-top: 12px;
+  color: #526568;
+  font-size: 26px;
+}
+
+.reveal .partnership-companies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 80px;
+  height: 220px;
+  margin-top: 24px;
+}
+
+.reveal .partnership-companies img {
+  display: block;
+  width: 420px;
+  height: 220px;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+}
+
+.reveal .partnership-answer {
+  margin-top: 24px;
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.reveal .app-story-layout {
+  display: grid;
+  grid-template-columns: 340px 400px 540px;
+  align-items: center;
+  height: 100%;
+}
+
+.reveal .app-story-screenshot {
+  display: block;
+  width: 340px;
+  height: 720px;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+}
+
+.reveal .app-story-question {
+  padding: 32px;
+}
+
+.reveal .app-story-question h2 {
+  font-size: 80px;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.reveal .app-story-question h2 span {
+  display: block;
+}
+
+.reveal .diagnosis-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: 740px 540px;
+  align-items: center;
+  height: 100%;
+}
+
+.reveal .diagnosis-question {
+  margin-left: 80px;
+  font-size: 92px;
+  line-height: 1.05;
+}
+
+.reveal .first-job-frame {
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+
+.reveal .first-job-frame h2 {
+  font-size: 112px;
+  line-height: 1.05;
+}
+
+.reveal .corner-art {
+  position: absolute;
+  width: 146px;
+  height: auto;
+  margin: 0;
+}
+
+.reveal .diagnosis-stethoscope {
+  top: 48px;
+  left: 72px;
+}
+
+.reveal .first-job-gloves {
+  right: 72px;
+  bottom: 48px;
+}
+
+.reveal .niche-frame {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  align-items: center;
+  gap: 48px;
+}
+
+.reveal .niche-frame h2 {
+  font-size: 96px;
+  line-height: 1.05;
+}
+
+.reveal .niche-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.reveal .vision-frame {
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  gap: 48px;
+  align-items: center;
+}
+
+.reveal .vision-frame h2 {
+  font-size: 84px;
+  line-height: 1.06;
+}
+
+.reveal .try-on-prototype {
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  border-radius: 18px;
+  background: #fffdf9;
+}
+
+.reveal .try-on-prototype figcaption {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 26px;
+  background: var(--ink);
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.reveal .try-on-prototype figcaption span {
+  color: #c8dcd9;
+  font-weight: 400;
+}
+
+.reveal .try-on-details {
+  padding: 28px;
+}
+
+.reveal .try-on-details h3 {
+  margin: 0 0 16px;
+  font-size: 54px;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.reveal .try-on-details p,
+.reveal .try-on-details fieldset {
+  font-size: 23px;
+}
+
+.reveal .try-on-details fieldset {
+  margin: 24px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.reveal .try-on-details legend {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.reveal .try-on-details label {
+  display: block;
+  margin-top: 6px;
+  padding: 10px 14px;
+  border: 1px solid #849998;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reveal .try-on-details label:has(:checked) {
+  background: #deebe7;
+  border-color: var(--ink);
+}
+
+.reveal .try-on-details input {
+  width: 17px;
+  height: 17px;
+  margin-right: 6px;
+  accent-color: var(--ink);
+}
+
+.reveal .closing-frame {
+  display: grid;
+  grid-template-columns: 1fr 485px;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  column-gap: 45px;
+}
+
+.reveal .questions-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reveal .questions-frame h2 {
+  font-size: 128px;
+  line-height: 1.05;
+}
+
+.reveal .closing-frame h2 {
+  font-size: 108px;
+  line-height: 1.02;
+}
+
+.reveal .closing-cues h3 {
+  margin: 0 0 20px;
+  font-size: 36px;
+  font-weight: 650;
+}
+
+.reveal .closing-cues ol {
+  margin: 0;
+  padding-left: 1.4em;
+  font-size: 29px;
+  line-height: 1.4;
+}
+
+.reveal .closing-cues li + li {
+  margin-top: 10px;
+}
+
+.reveal .closing-cues li::marker {
+  color: var(--accent);
+}
+
+.reveal .closing-prompt {
+  grid-column: 1 / -1;
+  padding-top: 24px;
+  border-top: 2px solid var(--ink);
+  font-size: 32px;
+}
+
+.reveal .app-story-note {
+  padding: 32px 40px 32px 8px;
+}
+
+.reveal .example-medical-note {
+  box-sizing: border-box;
+  padding: 32px;
+  border-top: 4px solid var(--ink);
+  background: #fffdf9;
+  text-align: left;
+}
+
+.reveal .example-medical-note h3 {
+  margin: 0 0 28px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.reveal .example-note-section {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.reveal .example-note-body {
+  margin-top: 14px;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.reveal .example-note-label {
+  margin-top: 30px;
+  color: #526568;
+  font-size: 22px;
+}
+
+.reveal .controls {
+  color: var(--accent);
+}
+
+.reveal .progress {
+  height: 3px;
+  color: var(--accent);
+  background: transparent;
+}
+
+.reveal .slide-number {
+  right: 16px;
+  bottom: 14px;
+  padding: 4px 8px;
+  background: rgb(250 246 237 / 92%);
+  color: var(--ink);
+  font-family: var(--r-main-font);
+  font-size: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal *,
+  .reveal *::before,
+  .reveal *::after {
+    transition-duration: 0s !important;
+    animation-duration: 0s !important;
+  }
+}
